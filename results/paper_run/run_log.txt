@@ -1,0 +1,255 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+device: cuda | smoke test: False
+manifest: 68308 images from 7 sources -> /content/drive/MyDrive/DAMGF-Net_run/results/run/image_manifest.csv
+label                                       earthquake  fire  ...  normal  smoke
+source                                                        ...               
+cyclone-wildfire-flood-earthquake-database        1350  1077  ...       0      0
+disaster-images-dataset                              0   933  ...    6843      0
+disasters-dataset-final                           9512  7534  ...       0      0
+disasters-intensity                               2000  2000  ...       0      0
+flooding-image-dataset                               0     0  ...       0      0
+forest-fire-image-dataset                            0  3893  ...    7139      0
+the-wildfire-dataset                                 0   385  ...    1654    660
+
+[7 rows x 5 columns]
+images 68308, posts 45384, IoT rows 59276, seismic events 1300
+
+=== STEP 1: image audit ===
+  hashed 0/68308
+  hashed 5000/68308
+  hashed 10000/68308
+  hashed 15000/68308
+  hashed 20000/68308
+  hashed 25000/68308
+  hashed 30000/68308
+  hashed 35000/68308
+  hashed 40000/68308
+  hashed 45000/68308
+  hashed 50000/68308
+  hashed 55000/68308
+  hashed 60000/68308
+  hashed 65000/68308
+{
+ "n_images_before": 68308,
+ "unreadable": 0,
+ "orig_split_test_with_exact_dup_in_train": 1523,
+ "orig_split_test_with_near_dup_in_train": 1860,
+ "orig_split_test_size": 10247,
+ "orig_split_near_dup_fraction": 0.18151654142675905,
+ "n_images_after_dedup": 58939,
+ "n_removed_as_near_duplicates": 9369,
+ "cross_source_near_dups_removed": 3949
+}
+
+=== EXPORT: splits and pairing indices ===
+  seed 42: train=41257, val=8841, test=8841
+  seed 43: train=41257, val=8841, test=8841
+  seed 44: train=41257, val=8841, test=8841
+  written to /content/drive/MyDrive/DAMGF-Net_run/data/
+
+=== STEP 2: caching frozen features ===
+  images 0/58939
+  images 3200/58939
+  images 6400/58939
+  images 9600/58939
+  images 12800/58939
+  images 16000/58939
+  images 19200/58939
+  images 22400/58939
+  images 25600/58939
+  images 28800/58939
+  images 32000/58939
+  images 35200/58939
+  images 38400/58939
+  images 41600/58939
+  images 44800/58939
+  images 48000/58939
+  images 51200/58939
+  images 54400/58939
+  images 57600/58939
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 4994.12it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+  text features 'orig' done
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 3748.65it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+device: cuda | smoke test: False
+images 68308, posts 45384, IoT rows 59276, seismic events 1300
+
+=== EXPORT: splits and pairing indices ===
+  seed 42: train=41257, val=8841, test=8841
+  seed 43: train=41257, val=8841, test=8841
+  seed 44: train=41257, val=8841, test=8841
+  written to /content/drive/MyDrive/DAMGF-Net_run/data/
+
+=== STEP 2: caching frozen features ===
+
+=== STEP 3: frozen-backbone ablation grid ===
+
+=== STEP 4: leave-one-source-out ===
+  forest-fire-image-dataset|full|keyword_masked acc=0.4931
+  skip the-wildfire-dataset: classes {'smoke'} occur only in this source
+
+=== STEP 6: efficiency ===
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 3763.45it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+  image_only {"params": 28983296, "bs1_batch_ms_mean": 11.467189940085518, "bs1_batch_ms_std": 0.29166075672818365, "bs1_per_sample_ms": 11.467189940085518, "bs1_throughput_per_s": 87.20532277086728, "bs1_peak_mem_MB": 145.75634765625, "GFLOPs_per_sample": 4.509892416, "bs16_batch_ms_mean": 74.17308046004109, "bs16_batch_ms_std": 1.0238538887654787, "bs16_per_sample_ms": 4.635817528752568, "bs16_throughput_per_s": 215.71168273939497, "bs16_peak_mem_MB": 369.08740234375}
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 4004.98it/s]
+[transformers] [1mBertModel LOAD REPORT[0m from: bert-base-uncased
+Key                                        | Status     |  | 
+-------------------------------------------+------------+--+-
+cls.predictions.transform.LayerNorm.bias   | UNEXPECTED |  | 
+cls.predictions.transform.dense.bias       | UNEXPECTED |  | 
+cls.predictions.transform.dense.weight     | UNEXPECTED |  | 
+cls.predictions.bias                       | UNEXPECTED |  | 
+cls.predictions.transform.LayerNorm.weight | UNEXPECTED |  | 
+cls.seq_relationship.weight                | UNEXPECTED |  | 
+cls.seq_relationship.bias                  | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+  full {"params": 150875009, "bs1_batch_ms_mean": 23.293632580025587, "bs1_batch_ms_std": 1.438216295268513, "bs1_per_sample_ms": 23.293632580025587, "bs1_throughput_per_s": 42.930186889678396, "bs1_peak_mem_MB": 730.55859375, "GFLOPs_per_sample": 15.419373376, "bs16_batch_ms_mean": 199.21871774005922, "bs16_batch_ms_std": 2.7371901087002404, "bs16_per_sample_ms": 12.451169858753701, "bs16_throughput_per_s": 80.3137384955806, "bs16_peak_mem_MB": 838.27685546875}
+# DAMGF-Net - results for the manuscript
+
+## Image audit
+
+- images before de-duplication: 68308, unreadable: 0
+- removed as near-duplicates (pHash Hamming <= 4): 9369 (of which cross-source: 3949)
+- images after de-duplication: 58939; per class: {'earthquake': 11410, 'flood': 17815, 'fire': 13937, 'smoke': 652, 'normal': 15125}
+- ORIGINAL random split: 1860 of 10247 test images (18.15%) had a near-duplicate in train (1523 exact)
+- per class: {'earthquake': 15.24, 'flood': 30.95, 'fire': 15.63, 'smoke': 1.01, 'normal': 4.73}
+
+Per source x class after de-duplication:
+
+|                                            |   earthquake |   fire |   flood |   normal |   smoke |
+|:-------------------------------------------|-------------:|-------:|--------:|---------:|--------:|
+| cyclone-wildfire-flood-earthquake-database |         1254 |    791 |     994 |        0 |       0 |
+| disaster-images-dataset                    |            0 |    794 |     890 |     6806 |       0 |
+| disasters-dataset-final                    |         9423 |   7450 |    9868 |        0 |       0 |
+| disasters-intensity                        |          733 |   1248 |    1895 |        0 |       0 |
+| flooding-image-dataset                     |            0 |      0 |    4168 |        0 |       0 |
+| forest-fire-image-dataset                  |            0 |   3285 |       0 |     6670 |       0 |
+| the-wildfire-dataset                       |            0 |    369 |       0 |     1649 |     652 |
+
+Text keyword-pool sizes: {'earthquake': 135, 'flood': 9701, 'fire': 5555, 'smoke': 5555, 'normal': 45384}
+
+## Frozen-backbone ablation (mean ± sd over seeds, %)
+
+| Variant | Text pairing | n seeds | Accuracy | Macro-F1 | MCC | Smoke recall |
+|---|---|---|---|---|---|---|
+| image_only | keyword | 3 | 96.08 ± 0.03 | 88.70 ± 0.81 | 94.76 ± 0.05 | 50.00 ± 8.35 |
+| text_only | keyword | 3 | 67.85 ± 4.84 | 54.17 ± 4.66 | 57.53 ± 6.65 | 0.00 ± 0.00 |
+| text_only | keyword_masked | 3 | 70.44 ± 2.87 | 55.91 ± 2.70 | 61.67 ± 3.56 | 0.00 ± 0.00 |
+| text_only | random_text | 3 | 30.23 ± 0.01 | 9.28 ± 0.00 | 0.00 ± 0.00 | 0.00 ± 0.00 |
+| iot_only | keyword | 3 | 30.23 ± 0.01 | 9.28 ± 0.00 | 0.00 ± 0.00 | 0.00 ± 0.00 |
+| seis_only | keyword | 3 | 30.23 ± 0.01 | 9.28 ± 0.00 | 0.00 ± 0.00 | 0.00 ± 0.00 |
+| concat | keyword | 3 | 95.99 ± 1.14 | 89.78 ± 1.93 | 94.64 ± 1.52 | 57.82 ± 8.92 |
+| concat | keyword_masked | 3 | 96.19 ± 0.77 | 88.43 ± 2.59 | 94.92 ± 1.03 | 46.94 ± 13.80 |
+| concat | random_text | 3 | 95.70 ± 0.49 | 88.21 ± 1.94 | 94.27 ± 0.66 | 50.68 ± 11.19 |
+| acmaf_only | keyword | 3 | 95.72 ± 0.08 | 89.06 ± 0.60 | 94.29 ± 0.11 | 58.84 ± 9.48 |
+| acmaf_only | keyword_masked | 3 | 96.24 ± 0.37 | 89.63 ± 2.43 | 94.99 ± 0.50 | 56.80 ± 17.45 |
+| acmaf_only | random_text | 3 | 95.78 ± 0.46 | 88.95 ± 1.87 | 94.38 ± 0.62 | 55.10 ± 12.03 |
+| static_graph | keyword | 3 | 95.91 ± 0.46 | 89.28 ± 0.45 | 94.54 ± 0.61 | 56.12 ± 14.03 |
+| static_graph | keyword_masked | 3 | 96.37 ± 0.32 | 90.26 ± 0.79 | 95.15 ± 0.43 | 59.18 ± 1.02 |
+| static_graph | random_text | 3 | 95.73 ± 0.32 | 89.28 ± 0.87 | 94.31 ± 0.43 | 60.20 ± 6.21 |
+| full | keyword | 3 | 95.69 ± 0.24 | 89.19 ± 1.45 | 94.25 ± 0.32 | 58.84 ± 9.81 |
+| full | keyword_masked | 3 | 96.38 ± 0.44 | 90.16 ± 0.81 | 95.18 ± 0.59 | 62.59 ± 4.25 |
+| full | random_text | 3 | 95.67 ± 0.15 | 88.53 ± 1.35 | 94.23 ± 0.21 | 56.46 ± 14.66 |
+| full_no_sev | keyword | 3 | 95.77 ± 0.23 | 89.66 ± 1.34 | 94.36 ± 0.30 | 62.24 ± 8.90 |
+| full_no_sev | keyword_masked | 3 | 96.50 ± 0.34 | 90.58 ± 1.65 | 95.34 ± 0.46 | 62.59 ± 6.79 |
+| full_no_sev | random_text | 3 | 95.89 ± 0.37 | 89.01 ± 0.99 | 94.52 ± 0.49 | 56.46 ± 4.71 |
+| full_moddrop | keyword | 3 | 95.39 ± 0.73 | 88.81 ± 0.62 | 93.85 ± 0.97 | 59.18 ± 1.02 |
+| full_moddrop | keyword_masked | 3 | 95.81 ± 0.75 | 88.66 ± 2.57 | 94.42 ± 0.99 | 54.08 ± 11.77 |
+| full_moddrop | random_text | 3 | 95.47 ± 0.08 | 88.44 ± 0.73 | 93.96 ± 0.11 | 50.68 ± 5.80 |
+
+## Test-time controls on the full model (accuracy %, mean ± sd)
+
+| Trained variant | Pairing | none | IoT+seismic shuffled | drop img | drop txt | drop IoT | drop seismic | drop IoT+seismic | image node only |
+|---|---|---|---|---|---|---|---|---|---|
+| full | keyword | 95.69 ± 0.24 | 95.69 ± 0.24 | 25.66 ± 0.01 | 95.68 ± 0.25 | 95.69 ± 0.25 | 95.69 ± 0.24 | 95.69 ± 0.23 | 95.69 ± 0.27 |
+| full | keyword_masked | 96.38 ± 0.44 | 96.38 ± 0.44 | 26.48 ± 1.42 | 92.89 ± 3.43 | 96.24 ± 0.28 | 96.24 ± 0.28 | 96.24 ± 0.28 | 92.86 ± 3.41 |
+| full | random_text | 95.67 ± 0.15 | 95.68 ± 0.15 | 28.71 ± 2.64 | 93.42 ± 3.73 | 93.33 ± 3.65 | 93.42 ± 3.72 | 92.98 ± 4.11 | 92.75 ± 4.40 |
+| full_moddrop | keyword | 95.39 ± 0.73 | 95.40 ± 0.74 | 61.61 ± 6.29 | 95.02 ± 1.16 | 95.35 ± 0.78 | 95.39 ± 0.72 | 95.41 ± 0.74 | 95.00 ± 1.19 |
+| full_moddrop | keyword_masked | 95.81 ± 0.75 | 95.81 ± 0.75 | 69.19 ± 3.14 | 94.54 ± 0.97 | 95.79 ± 0.77 | 95.79 ± 0.79 | 95.79 ± 0.80 | 94.56 ± 0.96 |
+| full_moddrop | random_text | 95.47 ± 0.08 | 95.47 ± 0.08 | 28.71 ± 2.64 | 95.48 ± 0.09 | 95.48 ± 0.08 | 95.48 ± 0.08 | 95.49 ± 0.08 | 95.48 ± 0.07 |
+
+## Adjacency diagnostics, dynamic graph
+
+| Variant | Pairing | row entropy (uniform = 1.386) | rows with max > 0.9 | rows with max > 0.99 | alpha mean (img, txt, iot, seis) |
+|---|---|---|---|---|---|
+| full | keyword | 0.001 ± 0.000 | 99.93 ± 0.03 % | 99.86 ± 0.06 % | [1.0, 0.0, 0.0, 0.0] |
+| full | keyword_masked | 0.001 ± 0.001 | 99.91 ± 0.13 % | 99.82 ± 0.22 % | [0.837, 0.163, 0.0, 0.0] |
+| full | random_text | 0.000 ± 0.000 | 99.96 ± 0.03 % | 99.92 ± 0.07 % | [1.0, 0.0, 0.0, 0.0] |
+| full_moddrop | keyword | 0.001 ± 0.001 | 99.91 ± 0.09 % | 99.82 ± 0.17 % | [0.941, 0.059, 0.0, 0.0] |
+| full_moddrop | keyword_masked | 0.002 ± 0.002 | 99.81 ± 0.22 % | 99.56 ± 0.51 % | [0.707, 0.293, 0.0, 0.0] |
+| full_moddrop | random_text | 0.001 ± 0.001 | 99.92 ± 0.07 % | 99.83 ± 0.14 % | [1.0, 0.0, 0.0, 0.0] |
+| static_graph | keyword | 1.385 ± 0.001 | 0.00 ± 0.00 % | 0.00 ± 0.00 % | [1.0, 0.0, 0.0, 0.0] |
+| static_graph | keyword_masked | 1.384 ± 0.001 | 0.00 ± 0.00 % | 0.00 ± 0.00 % | [0.832, 0.168, 0.0, 0.0] |
+| static_graph | random_text | 1.386 ± 0.000 | 0.00 ± 0.00 % | 0.00 ± 0.00 % | [1.0, 0.0, 0.0, 0.0] |
+
+Mean adjacency, full|keyword, first seed (rows = source img, txt, iot, seis):
+
+```
+[[0.27869999408721924, 0.429500013589859, 0.002899999963119626, 0.289000004529953], [0.22439999878406525, 0.0, 0.27140000462532043, 0.5041999816894531], [0.30799999833106995, 0.0, 0.20000000298023224, 0.492000013589859], [0.24490000307559967, 0.6525999903678894, 0.0966000035405159, 0.005900000222027302]]
+std:
+[[0.4480000138282776, 0.49480000138282776, 0.05380000174045563, 0.4530999958515167], [0.4171999990940094, 0.0, 0.444599986076355, 0.5], [0.46160000562667847, 0.0, 0.4000000059604645, 0.4999000132083893], [0.42989999055862427, 0.47609999775886536, 0.29490000009536743, 0.07540000230073929]]
+```
+
+Kappa vs MCC (5 decimals), full|keyword:
+- seed 42: MCC=0.93890, kappa=0.93886
+- seed 43: MCC=0.94521, kappa=0.94519
+- seed 44: MCC=0.94330, kappa=0.94323
+
+## Leave-one-source-out
+
+| Held-out source | classes | n test | image-only acc | full (keyword) acc | full (masked) acc | full (masked) macro-F1 |
+|---|---|---|---|---|---|---|
+| cyclone-wildfire-flood-earthquake-database | earthquake,fire,flood | 3039 | 89.37 | 87.92 | 91.18 | 93.12 |
+| disaster-images-dataset | fire,flood,normal | 8490 | 68.15 | 80.59 | 84.51 | 84.27 |
+| disasters-dataset-final | earthquake,fire,flood | 26741 | 91.15 | 91.23 | 92.05 | 94.12 |
+| disasters-intensity | earthquake,fire,flood | 3876 | 95.43 | 94.99 | 95.74 | 96.28 |
+| flooding-image-dataset | flood | 4168 | 87.36 | 88.15 | 89.49 | 94.45 |
+| forest-fire-image-dataset | fire,normal | 9955 | 51.26 | 50.83 | 49.31 | 65.56 |
+
+## Efficiency - device: Tesla T4
+
+| Model | Params (M) | GFLOPs/sample | latency bs=1 (ms) | per-sample bs=16 (ms) | throughput bs=16 (/s) | peak mem bs=16 (MB) |
+|---|---|---|---|---|---|---|
+| image_only | 28.98 | 4.51 | 11.47 ± 0.29 | 4.64 | 215.7 | 369 |
+| full | 150.88 | 15.42 | 23.29 ± 1.44 | 12.45 | 80.3 | 838 |

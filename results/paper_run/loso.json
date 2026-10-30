@@ -1,0 +1,353 @@
+{
+  "cyclone-wildfire-flood-earthquake-database|image_only|keyword": {
+    "n_test": 3039,
+    "classes": [
+      "earthquake",
+      "fire",
+      "flood"
+    ],
+    "test": {
+      "acc": 0.8937150378413952,
+      "macro_f1": 0.9257931480656095,
+      "weighted_f1": 0.929271236095231,
+      "mcc": 0.8480654603924372,
+      "kappa": 0.8437318215901004,
+      "recall_earthquake": 0.9202551834130781,
+      "recall_flood": 0.89738430583501,
+      "recall_fire": 0.8470290771175727,
+      "recall_smoke": 0.0,
+      "recall_normal": 0.0
+    }
+  },
+  "cyclone-wildfire-flood-earthquake-database|full|keyword": {
+    "n_test": 3039,
+    "classes": [
+      "earthquake",
+      "fire",
+      "flood"
+    ],
+    "test": {
+      "acc": 0.8792365909838763,
+      "macro_f1": 0.9151703560233905,
+      "weighted_f1": 0.918324702833508,
+      "mcc": 0.8287188007660721,
+      "kappa": 0.823509892065839,
+      "recall_earthquake": 0.8851674641148325,
+      "recall_flood": 0.9094567404426559,
+      "recall_fire": 0.831858407079646,
+      "recall_smoke": 0.0,
+      "recall_normal": 0.0
+    }
+  },
+  "cyclone-wildfire-flood-earthquake-database|full|keyword_masked": {
+    "n_test": 3039,
+    "classes": [
+      "earthquake",
+      "fire",
+      "flood"
+    ],
+    "test": {
+      "acc": 0.9118130964132939,
+      "macro_f1": 0.9312048238678017,
+      "weighted_f1": 0.9344620535914946,
+      "mcc": 0.8704408147866363,
+      "kappa": 0.8684529690436815,
+      "recall_earthquake": 0.9314194577352473,
+      "recall_flood": 0.9346076458752515,
+      "recall_fire": 0.8520859671302149,
+      "recall_smoke": 0.0,
+      "recall_normal": 0.0
+    }
+  },
+  "disaster-images-dataset|image_only|keyword": {
+    "n_test": 8490,
+    "classes": [
+      "fire",
+      "flood",
+      "normal"
+    ],
+    "test": {
+      "acc": 0.68150765606596,
+      "macro_f1": 0.7378124284457718,
+      "weighted_f1": 0.7570838780720521,
+      "mcc": 0.5042409542028741,
+      "kappa": 0.42551553295394995,
+      "recall_earthquake": 0.0,
+      "recall_flood": 0.8707865168539326,
+      "recall_fire": 0.9042821158690176,
+      "recall_smoke": 0.0,
+      "recall_normal": 0.6307669703203056
+    }
+  },
+  "disaster-images-dataset|full|keyword": {
+    "n_test": 8490,
+    "classes": [
+      "fire",
+      "flood",
+      "normal"
+    ],
+    "test": {
+      "acc": 0.805889281507656,
+      "macro_f1": 0.7949914258009597,
+      "weighted_f1": 0.8494972964678318,
+      "mcc": 0.6181841099702453,
+      "kappa": 0.5762517930869977,
+      "recall_earthquake": 0.0,
+      "recall_flood": 0.8662921348314607,
+      "recall_fire": 0.9030226700251889,
+      "recall_smoke": 0.0,
+      "recall_normal": 0.7866588304437261
+    }
+  },
+  "disaster-images-dataset|full|keyword_masked": {
+    "n_test": 8490,
+    "classes": [
+      "fire",
+      "flood",
+      "normal"
+    ],
+    "test": {
+      "acc": 0.8451118963486455,
+      "macro_f1": 0.8426754022883882,
+      "weighted_f1": 0.8853501357207075,
+      "mcc": 0.6777292309265566,
+      "kappa": 0.6443614194057901,
+      "recall_earthquake": 0.0,
+      "recall_flood": 0.8842696629213483,
+      "recall_fire": 0.9105793450881612,
+      "recall_smoke": 0.0,
+      "recall_normal": 0.8323538054657655
+    }
+  },
+  "disasters-dataset-final|image_only|keyword": {
+    "n_test": 26741,
+    "classes": [
+      "earthquake",
+      "fire",
+      "flood"
+    ],
+    "test": {
+      "acc": 0.9115216334467672,
+      "macro_f1": 0.941924768343775,
+      "weighted_f1": 0.9398026294134227,
+      "mcc": 0.8744395397635798,
+      "kappa": 0.870489485921224,
+      "recall_earthquake": 0.8516396052212671,
+      "recall_flood": 0.9335224969598703,
+      "recall_fire": 0.9581208053691275,
+      "recall_smoke": 0.0,
+      "recall_normal": 0.0
+    }
+  },
+  "disasters-dataset-final|full|keyword": {
+    "n_test": 26741,
+    "classes": [
+      "earthquake",
+      "fire",
+      "flood"
+    ],
+    "test": {
+      "acc": 0.912269548633185,
+      "macro_f1": 0.9417361701898511,
+      "weighted_f1": 0.9398219114622758,
+      "mcc": 0.8749602318063315,
+      "kappa": 0.8714897499530687,
+      "recall_earthquake": 0.8608723336517032,
+      "recall_flood": 0.9278475881637617,
+      "recall_fire": 0.9566442953020134,
+      "recall_smoke": 0.0,
+      "recall_normal": 0.0
+    }
+  },
+  "disasters-dataset-final|full|keyword_masked": {
+    "n_test": 26741,
+    "classes": [
+      "earthquake",
+      "fire",
+      "flood"
+    ],
+    "test": {
+      "acc": 0.9204966156837815,
+      "macro_f1": 0.9412316503359878,
+      "weighted_f1": 0.9401891026313122,
+      "mcc": 0.8845560710172391,
+      "kappa": 0.8822749708195449,
+      "recall_earthquake": 0.8729703915950334,
+      "recall_flood": 0.9619983785974868,
+      "recall_fire": 0.9256375838926174,
+      "recall_smoke": 0.0,
+      "recall_normal": 0.0
+    }
+  },
+  "disasters-intensity|image_only|keyword": {
+    "n_test": 3876,
+    "classes": [
+      "earthquake",
+      "fire",
+      "flood"
+    ],
+    "test": {
+      "acc": 0.9543343653250774,
+      "macro_f1": 0.9617965844329541,
+      "weighted_f1": 0.9638460207097169,
+      "mcc": 0.9291433298833309,
+      "kappa": 0.9279896312928723,
+      "recall_earthquake": 0.9918144611186903,
+      "recall_flood": 0.9393139841688655,
+      "recall_fire": 0.9551282051282052,
+      "recall_smoke": 0.0,
+      "recall_normal": 0.0
+    }
+  },
+  "disasters-intensity|full|keyword": {
+    "n_test": 3876,
+    "classes": [
+      "earthquake",
+      "fire",
+      "flood"
+    ],
+    "test": {
+      "acc": 0.9499484004127967,
+      "macro_f1": 0.9575807119853144,
+      "weighted_f1": 0.9600987641354857,
+      "mcc": 0.922520732486794,
+      "kappa": 0.9211881354155749,
+      "recall_earthquake": 0.9822646657571623,
+      "recall_flood": 0.9308707124010555,
+      "recall_fire": 0.9599358974358975,
+      "recall_smoke": 0.0,
+      "recall_normal": 0.0
+    }
+  },
+  "disasters-intensity|full|keyword_masked": {
+    "n_test": 3876,
+    "classes": [
+      "earthquake",
+      "fire",
+      "flood"
+    ],
+    "test": {
+      "acc": 0.9574303405572755,
+      "macro_f1": 0.9627831675023196,
+      "weighted_f1": 0.9657985054657245,
+      "mcc": 0.933141704761197,
+      "kappa": 0.9325380173810016,
+      "recall_earthquake": 0.9686221009549796,
+      "recall_flood": 0.9509234828496043,
+      "recall_fire": 0.9607371794871795,
+      "recall_smoke": 0.0,
+      "recall_normal": 0.0
+    }
+  },
+  "flooding-image-dataset|image_only|keyword": {
+    "n_test": 4168,
+    "classes": [
+      "flood"
+    ],
+    "test": {
+      "acc": 0.8735604606525912,
+      "macro_f1": 0.9325137661672429,
+      "weighted_f1": 0.9325137661672429,
+      "mcc": 0.0,
+      "kappa": 0.0,
+      "recall_earthquake": 0.0,
+      "recall_flood": 0.8735604606525912,
+      "recall_fire": 0.0,
+      "recall_smoke": 0.0,
+      "recall_normal": 0.0
+    }
+  },
+  "flooding-image-dataset|full|keyword": {
+    "n_test": 4168,
+    "classes": [
+      "flood"
+    ],
+    "test": {
+      "acc": 0.8814779270633397,
+      "macro_f1": 0.9370058658505483,
+      "weighted_f1": 0.9370058658505483,
+      "mcc": 0.0,
+      "kappa": 0.0,
+      "recall_earthquake": 0.0,
+      "recall_flood": 0.8814779270633397,
+      "recall_fire": 0.0,
+      "recall_smoke": 0.0,
+      "recall_normal": 0.0
+    }
+  },
+  "flooding-image-dataset|full|keyword_masked": {
+    "n_test": 4168,
+    "classes": [
+      "flood"
+    ],
+    "test": {
+      "acc": 0.8949136276391555,
+      "macro_f1": 0.9445429222587997,
+      "weighted_f1": 0.9445429222587997,
+      "mcc": 0.0,
+      "kappa": 0.0,
+      "recall_earthquake": 0.0,
+      "recall_flood": 0.8949136276391555,
+      "recall_fire": 0.0,
+      "recall_smoke": 0.0,
+      "recall_normal": 0.0
+    }
+  },
+  "forest-fire-image-dataset|image_only|keyword": {
+    "n_test": 9955,
+    "classes": [
+      "fire",
+      "normal"
+    ],
+    "test": {
+      "acc": 0.5126067302862883,
+      "macro_f1": 0.6611431173581876,
+      "weighted_f1": 0.5896042006573453,
+      "mcc": 0.44519966648931986,
+      "kappa": 0.33845716941577564,
+      "recall_earthquake": 0.0,
+      "recall_flood": 0.0,
+      "recall_fire": 0.9613394216133943,
+      "recall_smoke": 0.0,
+      "recall_normal": 0.29160419790104947
+    }
+  },
+  "forest-fire-image-dataset|full|keyword": {
+    "n_test": 9955,
+    "classes": [
+      "fire",
+      "normal"
+    ],
+    "test": {
+      "acc": 0.5082872928176796,
+      "macro_f1": 0.6739194819528802,
+      "weighted_f1": 0.5981535536402036,
+      "mcc": 0.45086072349979306,
+      "kappa": 0.34067459936250877,
+      "recall_earthquake": 0.0,
+      "recall_flood": 0.0,
+      "recall_fire": 0.9464231354642314,
+      "recall_smoke": 0.0,
+      "recall_normal": 0.29250374812593705
+    }
+  },
+  "forest-fire-image-dataset|full|keyword_masked": {
+    "n_test": 9955,
+    "classes": [
+      "fire",
+      "normal"
+    ],
+    "test": {
+      "acc": 0.4931190356604721,
+      "macro_f1": 0.6556019672011223,
+      "weighted_f1": 0.574034766323837,
+      "mcc": 0.44333758003313073,
+      "kappa": 0.3293425109564596,
+      "recall_earthquake": 0.0,
+      "recall_flood": 0.0,
+      "recall_fire": 0.9598173515981735,
+      "recall_smoke": 0.0,
+      "recall_normal": 0.26326836581709145
+    }
+  }
+}

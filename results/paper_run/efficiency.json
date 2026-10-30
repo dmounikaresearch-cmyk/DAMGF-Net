@@ -1,0 +1,32 @@
+{
+  "device": "Tesla T4",
+  "torch": "2.11.0+cu130",
+  "image_only": {
+    "params": 28983296,
+    "bs1_batch_ms_mean": 11.467189940085518,
+    "bs1_batch_ms_std": 0.29166075672818365,
+    "bs1_per_sample_ms": 11.467189940085518,
+    "bs1_throughput_per_s": 87.20532277086728,
+    "bs1_peak_mem_MB": 145.75634765625,
+    "GFLOPs_per_sample": 4.509892416,
+    "bs16_batch_ms_mean": 74.17308046004109,
+    "bs16_batch_ms_std": 1.0238538887654787,
+    "bs16_per_sample_ms": 4.635817528752568,
+    "bs16_throughput_per_s": 215.71168273939497,
+    "bs16_peak_mem_MB": 369.08740234375
+  },
+  "full": {
+    "params": 150875009,
+    "bs1_batch_ms_mean": 23.293632580025587,
+    "bs1_batch_ms_std": 1.438216295268513,
+    "bs1_per_sample_ms": 23.293632580025587,
+    "bs1_throughput_per_s": 42.930186889678396,
+    "bs1_peak_mem_MB": 730.55859375,
+    "GFLOPs_per_sample": 15.419373376,
+    "bs16_batch_ms_mean": 199.21871774005922,
+    "bs16_batch_ms_std": 2.7371901087002404,
+    "bs16_per_sample_ms": 12.451169858753701,
+    "bs16_throughput_per_s": 80.3137384955806,
+    "bs16_peak_mem_MB": 838.27685546875
+  }
+}
