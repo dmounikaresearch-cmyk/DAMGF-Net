@@ -1,0 +1,19 @@
+source_folder,harmonised_class
+Both_smoke_and_fire,fire
+Earthquake,earthquake
+FIRE,fire
+Flood,flood
+Flood Images,flood
+NON_FIRE,normal
+Non_Damage_Buildings_Street,normal
+Non_Damage_Wildlife_Forest,normal
+Smoke_from_fires,smoke
+Urban_Fire,fire
+Water_Disaster,flood
+Wild_Fire,fire
+Wildfire,fire
+earthquake,earthquake
+fire,fire
+flood,flood
+nofire,normal
+wildfire,fire
