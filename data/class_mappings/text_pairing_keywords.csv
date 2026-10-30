@@ -1,0 +1,6 @@
+class,keywords,pool_size,severity_target
+earthquake,earthquake quake seismic tremor,135,0.95
+flood,flood rain storm water,9701,0.9
+fire,fire wildfire smoke burn,5555,0.8
+smoke,fire wildfire smoke burn,5555,0.5
+normal,(random post),45384,0.1
