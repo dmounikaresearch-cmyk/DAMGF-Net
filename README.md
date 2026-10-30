@@ -1,7 +1,7 @@
 # DAMGF-Net: Dynamic Adaptive Multimodal Graph Fusion for Multi-Hazard Recognition
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dmounikaresearch-cmyk/DAMGF-Net/blob/main/notebooks/run_in_colab.ipynb)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23725882.svg)](https://doi.org/10.5281/zenodo.23725882)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23725881.svg)](https://doi.org/10.5281/zenodo.23725881)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 Code and data for the paper:
@@ -14,7 +14,7 @@ Everything needed to repeat the experiments is in this one repository:
 - **Data:** for every seed, the data splits, the harmonised class mapping, the de-duplication lists and the cross-modal pairing indices (`data/`).
 - **Results:** the result files of the run reported in the paper (`results/paper_run/`).
 
-Archived version: Zenodo, DOI [10.5281/zenodo.23725882](https://doi.org/10.5281/zenodo.23725882).
+Archived version: Zenodo, DOI [10.5281/zenodo.23725881](https://doi.org/10.5281/zenodo.23725881).
 
 ---
 
@@ -255,7 +255,7 @@ A new run with the same seeds gives the same splits and pairings as the released
   author  = {Mounika, Dannuri and Kolluri, Johnson and Srinivas, Sunil},
   journal = {Manuscript submitted for publication},
   year    = {2026},
-  doi     = {10.5281/zenodo.23725882}
+  doi     = {10.5281/zenodo.23725881}
 }
 ```
 
