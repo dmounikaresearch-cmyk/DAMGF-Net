@@ -1,0 +1,9 @@
+data/MultiHazard/
+results/run/cache/
+results/run/image_manifest*.csv
+*.pt
+*.pth
+*.npy
+__pycache__/
+.ipynb_checkpoints/
+.venv/
