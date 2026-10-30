@@ -1,0 +1,119 @@
+{
+  "n_images_before": 68308,
+  "unreadable": 0,
+  "per_source_class_before": {
+    "earthquake": {
+      "cyclone-wildfire-flood-earthquake-database": 1350,
+      "disaster-images-dataset": 0,
+      "disasters-dataset-final": 9512,
+      "disasters-intensity": 2000,
+      "flooding-image-dataset": 0,
+      "forest-fire-image-dataset": 0,
+      "the-wildfire-dataset": 0
+    },
+    "fire": {
+      "cyclone-wildfire-flood-earthquake-database": 1077,
+      "disaster-images-dataset": 933,
+      "disasters-dataset-final": 7534,
+      "disasters-intensity": 2000,
+      "flooding-image-dataset": 0,
+      "forest-fire-image-dataset": 3893,
+      "the-wildfire-dataset": 385
+    },
+    "flood": {
+      "cyclone-wildfire-flood-earthquake-database": 1073,
+      "disaster-images-dataset": 1035,
+      "disasters-dataset-final": 9924,
+      "disasters-intensity": 2000,
+      "flooding-image-dataset": 9296,
+      "forest-fire-image-dataset": 0,
+      "the-wildfire-dataset": 0
+    },
+    "normal": {
+      "cyclone-wildfire-flood-earthquake-database": 0,
+      "disaster-images-dataset": 6843,
+      "disasters-dataset-final": 0,
+      "disasters-intensity": 0,
+      "flooding-image-dataset": 0,
+      "forest-fire-image-dataset": 7139,
+      "the-wildfire-dataset": 1654
+    },
+    "smoke": {
+      "cyclone-wildfire-flood-earthquake-database": 0,
+      "disaster-images-dataset": 0,
+      "disasters-dataset-final": 0,
+      "disasters-intensity": 0,
+      "flooding-image-dataset": 0,
+      "forest-fire-image-dataset": 0,
+      "the-wildfire-dataset": 660
+    }
+  },
+  "orig_split_test_with_exact_dup_in_train": 1523,
+  "orig_split_test_with_near_dup_in_train": 1860,
+  "orig_split_test_size": 10247,
+  "orig_split_near_dup_fraction": 0.18151654142675905,
+  "orig_split_near_dup_fraction_per_class": {
+    "earthquake": 0.15241057542768274,
+    "flood": 0.309517004858531,
+    "fire": 0.15627632687447346,
+    "smoke": 0.010101010101010102,
+    "normal": 0.04731457800511509
+  },
+  "n_images_after_dedup": 58939,
+  "n_removed_as_near_duplicates": 9369,
+  "per_class_after": {
+    "earthquake": 11410,
+    "flood": 17815,
+    "fire": 13937,
+    "smoke": 652,
+    "normal": 15125
+  },
+  "per_source_class_after": {
+    "earthquake": {
+      "cyclone-wildfire-flood-earthquake-database": 1254,
+      "disaster-images-dataset": 0,
+      "disasters-dataset-final": 9423,
+      "disasters-intensity": 733,
+      "flooding-image-dataset": 0,
+      "forest-fire-image-dataset": 0,
+      "the-wildfire-dataset": 0
+    },
+    "fire": {
+      "cyclone-wildfire-flood-earthquake-database": 791,
+      "disaster-images-dataset": 794,
+      "disasters-dataset-final": 7450,
+      "disasters-intensity": 1248,
+      "flooding-image-dataset": 0,
+      "forest-fire-image-dataset": 3285,
+      "the-wildfire-dataset": 369
+    },
+    "flood": {
+      "cyclone-wildfire-flood-earthquake-database": 994,
+      "disaster-images-dataset": 890,
+      "disasters-dataset-final": 9868,
+      "disasters-intensity": 1895,
+      "flooding-image-dataset": 4168,
+      "forest-fire-image-dataset": 0,
+      "the-wildfire-dataset": 0
+    },
+    "normal": {
+      "cyclone-wildfire-flood-earthquake-database": 0,
+      "disaster-images-dataset": 6806,
+      "disasters-dataset-final": 0,
+      "disasters-intensity": 0,
+      "flooding-image-dataset": 0,
+      "forest-fire-image-dataset": 6670,
+      "the-wildfire-dataset": 1649
+    },
+    "smoke": {
+      "cyclone-wildfire-flood-earthquake-database": 0,
+      "disaster-images-dataset": 0,
+      "disasters-dataset-final": 0,
+      "disasters-intensity": 0,
+      "flooding-image-dataset": 0,
+      "forest-fire-image-dataset": 0,
+      "the-wildfire-dataset": 652
+    }
+  },
+  "cross_source_near_dups_removed": 3949
+}
